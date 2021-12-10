@@ -34,6 +34,24 @@ var tweets: [Tweet] = [
     
     Tweet(profilePicture: "NoneProfilePicture", profileName: "Elliot", arobase: "@Ellioto0o", tweetContent: "Aujourd'hui j'ai été manger des pâtes au restaurant c'était bon !"),
     Tweet(profilePicture: "NoneProfilePicture", profileName: "Steve Jobs", arobase: "@SJobs", tweetContent: "I eat Apple all the time !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthur Rimbaut", arobase: "@Rimbault", tweetContent: "Il n'y as pas de pommes rouge plus vertes qu'orange"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Elliot", arobase: "@Ellioto0o", tweetContent: "Aujourd'hui j'ai été manger des pâtes au restaurant c'était bon !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Steve Jobs", arobase: "@SJobs", tweetContent: "I eat Apple all the time !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthur Rimbaut", arobase: "@Rimbault", tweetContent: "Il n'y as pas de pommes rouge plus vertes qu'orange"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Elliot", arobase: "@Ellioto0o", tweetContent: "Aujourd'hui j'ai été manger des pâtes au restaurant c'était bon !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Steve Jobs", arobase: "@SJobs", tweetContent: "I eat Apple all the time !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthur Rimbaut", arobase: "@Rimbault", tweetContent: "Il n'y as pas de pommes rouge plus vertes qu'orange"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Elliot", arobase: "@Ellioto0o", tweetContent: "Aujourd'hui j'ai été manger des pâtes au restaurant c'était bon !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Steve Jobs", arobase: "@SJobs", tweetContent: "I eat Apple all the time !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthur Rimbaut", arobase: "@Rimbault", tweetContent: "Il n'y as pas de pommes rouge plus vertes qu'orange"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Elliot", arobase: "@Ellioto0o", tweetContent: "Aujourd'hui j'ai été manger des pâtes au restaurant c'était bon !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Steve Jobs", arobase: "@SJobs", tweetContent: "I eat Apple all the time !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthur Rimbaut", arobase: "@Rimbault", tweetContent: "Il n'y as pas de pommes rouge plus vertes qu'orange"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Elliot", arobase: "@Ellioto0o", tweetContent: "Aujourd'hui j'ai été manger des pâtes au restaurant c'était bon !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Steve Jobs", arobase: "@SJobs", tweetContent: "I eat Apple all the time !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthur Rimbaut", arobase: "@Rimbault", tweetContent: "Il n'y as pas de pommes rouge plus vertes qu'orange"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Elliot", arobase: "@Ellioto0o", tweetContent: "Aujourd'hui j'ai été manger des pâtes au restaurant c'était bon !"),
+    Tweet(profilePicture: "NoneProfilePicture", profileName: "Steve Jobs", arobase: "@SJobs", tweetContent: "I eat Apple all the time !"),
     Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthur Rimbaut", arobase: "@Rimbault", tweetContent: "Il n'y as pas de pommes rouge plus vertes qu'orange")
     
 ]
