@@ -23,23 +23,18 @@ struct TweetsView: View {
                             Text(tweet.profileName)
                                 .bold()
                             Text(tweet.arobase)
+                            Spacer()
+                            Image(systemName: "ellipsis")
                         }
                         Text(tweet.tweetContent)
                         HStack {
-                            Button(action: {}, label: { Image(systemName: "message")})
-                                .padding(.horizontal)
-                                .padding(.horizontal, -10)
-                            Button(action: {}, label: { Image(systemName: "return")})
-                                .padding(.horizontal)
-                            Button(action: {}, label: { Image(systemName:  "heart")})
-                                .padding(.horizontal)
-                            Button(action: {}, label: { Image(systemName: "square.and.arrow.up")})
-                                .padding(.horizontal)
-                                
+                            ActionButtonView(buttonImageName: "message")
+                            ActionButtonView(buttonImageName: "return")
+                            ActionButtonView(buttonImageName: "heart")
+                            ActionButtonView(buttonImageName:  "square.and.arrow.up")
                         }
                     }
                 }
-                
             }.listStyle(.plain)
                 .navigationBarTitle("Twitter", displayMode: .inline)
                 .navigationBarItems(leading: Button(action: {},
@@ -59,5 +54,16 @@ struct TweetsView: View {
 struct TweetsView_Previews: PreviewProvider {
     static var previews: some View {
         TweetsView()
+    }
+}
+
+struct ActionButtonView: View {
+    
+    var buttonImageName: String
+    
+    var body: some View {
+        Button(action: {}, label: { Image(systemName: buttonImageName)})
+            .padding(.horizontal)
+            .padding(.horizontal, -10)
     }
 }
