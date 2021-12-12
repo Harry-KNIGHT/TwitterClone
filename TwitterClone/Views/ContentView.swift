@@ -13,7 +13,6 @@ struct ContentView: View {
             TweetsView()
                 .tabItem {
                 Label("Tweets", systemImage: "house.fill")
-                        
                 }
             SearchView()
                 .tabItem {
