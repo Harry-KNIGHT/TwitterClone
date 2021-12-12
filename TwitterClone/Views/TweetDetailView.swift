@@ -65,6 +65,7 @@ struct TweetDetailView: View {
                 }
             }.navigationTitle("Tweet")
                 .navigationBarTitleDisplayMode(.inline)
+                
         }.padding()
     }
     

@@ -11,15 +11,17 @@ struct CreationTweetView: View {
     let tweet: Tweet
     @State var tweetTextEntry: String = ""
     var body: some View {
-        HStack() {
-        Image(tweet.profilePicture)
-            .resizable()
-            .scaledToFit()
-            .clipShape(Circle())
-            .frame(width: 50)
-            TextField("Quoi de neuf ?", text: $tweetTextEntry)
-         Spacer()
-        }.padding()
+        VStack {
+            HStack {
+                Image(tweet.profilePicture)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                    .frame(width: 50)
+                TextField("Quoi de neuf ?", text: $tweetTextEntry)
+            }.padding()
+            Spacer()
+        }
     }
 }
 

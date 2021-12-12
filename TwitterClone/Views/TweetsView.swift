@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TweetsView: View {
-    
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
@@ -51,7 +50,7 @@ struct TweetsView: View {
                     }), trailing: Button(action: {}, label: {
                         Image(systemName: "seal")
                     }))
-                NewTweetButtonCellView()
+                NewTweetButtonCellView(tweet: tweets[0])
                     .padding()
             }
         }
