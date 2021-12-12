@@ -51,16 +51,18 @@ struct TweetDetailView: View {
                         .foregroundColor(.secondary)
                 }
                 Divider()
-                HStack(alignment: .center, spacing: 10) {
-                    ActionButtonCellView(buttonImageName: "message")
-                    ActionButtonCellView(buttonImageName: "return")
-                    ActionButtonCellView(buttonImageName: "heart")
-                        .padding()
-                    ActionButtonCellView(buttonImageName: "square.and.arrow.up")
-                }.foregroundColor(.secondary)
-                Divider()
-                    
-                Spacer()
+                VStack(alignment: .center) {
+                    HStack(alignment: .center, spacing: 45) {
+                        ActionButtonCellView(buttonImageName: "message")
+                        ActionButtonCellView(buttonImageName: "return")
+                        ActionButtonCellView(buttonImageName: "heart")
+                        ActionButtonCellView(buttonImageName: "square.and.arrow.up")
+                    }.font(.system(size: 20))
+                    .foregroundColor(.secondary)
+                    .padding(.vertical, 5)
+                    Divider()
+                    Spacer()
+                }
             }.navigationTitle("Tweet")
                 .navigationBarTitleDisplayMode(.inline)
         }.padding()
@@ -73,6 +75,6 @@ struct TweetDetailView: View {
 struct TweetDetailView_Previews: PreviewProvider {
     static var previews: some View {
         TweetDetailView(tweet: tweets[0])
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }

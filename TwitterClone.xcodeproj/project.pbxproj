@@ -19,6 +19,7 @@
 		3C04414127654793005842BE /* Tweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04414027654793005842BE /* Tweets.swift */; };
 		3C0441442765EF3A005842BE /* NewTweetButtonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0441432765EF39005842BE /* NewTweetButtonCellView.swift */; };
 		3C0441472765F63E005842BE /* TweetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0441462765F63E005842BE /* TweetDetailView.swift */; };
+		3C141F952766284D00DE6939 /* CreationTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C141F942766284D00DE6939 /* CreationTweetView.swift */; };
 		3C55D61C2765FF900000693A /* ActionButtonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55D61B2765FF900000693A /* ActionButtonCellView.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		3C04414027654793005842BE /* Tweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweets.swift; sourceTree = "<group>"; };
 		3C0441432765EF39005842BE /* NewTweetButtonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetButtonCellView.swift; sourceTree = "<group>"; };
 		3C0441462765F63E005842BE /* TweetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailView.swift; sourceTree = "<group>"; };
+		3C141F942766284D00DE6939 /* CreationTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationTweetView.swift; sourceTree = "<group>"; };
 		3C55D61B2765FF900000693A /* ActionButtonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3C0441282763F6EA005842BE /* ContentView.swift */,
+				3C141F942766284D00DE6939 /* CreationTweetView.swift */,
 				3C0441342763F792005842BE /* TweetsView.swift */,
 				3C0441462765F63E005842BE /* TweetDetailView.swift */,
 				3C0441362763F7A1005842BE /* SearchView.swift */,
@@ -207,6 +210,7 @@
 				3C0441472765F63E005842BE /* TweetDetailView.swift in Sources */,
 				3C0441272763F6EA005842BE /* TwitterCloneApp.swift in Sources */,
 				3C0441392763F7AB005842BE /* NotificationView.swift in Sources */,
+				3C141F952766284D00DE6939 /* CreationTweetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

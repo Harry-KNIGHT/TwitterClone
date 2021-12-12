@@ -19,7 +19,7 @@ struct TweetsView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .clipShape(Circle())
-                                .frame(width: 45)
+                                .frame(width: 50)
                             VStack(alignment: .leading) {
                                 HStack {
                                     Text(tweet.profileName)
