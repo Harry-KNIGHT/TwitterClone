@@ -12,10 +12,8 @@ var tweets: [Tweet] = [
     
     Tweet(profilePicture: "ElliotKnightProfilePicture", profileName: "Elliot", arobase: "@Ellioto0o", tweetContent: "Aujourd'hui j'ai été manger des pâtes au restaurant c'était bon !"),
     
-    Tweet(profilePicture: "MickaelAppleMas", profileName: "Apple Mas", arobase: "@Appiwedia", tweetContent: "Heey frenchies today I'm at the WWDC 2022 and we're going to see what Apple make for the new Xcode version for making toast with me in AR ! 🇺🇸 🔥"),
-    
-    Tweet(profilePicture: "SteveJobsProfilePicture", profileName: "Steve Jobs", arobase: "@SJobs", tweetContent: "I eat Apple all the time, it's getting better all the time !"),
-    
+    Tweet(profilePicture: "MickaelAppleMas", profileName: "Apple Mas", arobase: "@Appiwedia", tweetContent: "Salut à tous aujourd'hui on est à la WWDC 2022 pour mon passage sur scène, rate pas ça : apple.com  "),
+        
     Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthur Rimbaut", arobase: "@Rimbault", tweetContent: "Il n'y as pas de pommes rouge plus vertes qu'orange"),
     
     Tweet(profilePicture: "NoneProfilePicture", profileName: "Arthurette", arobase: "@ArthUre", tweetContent: "Il faut que j'aille chez @Ellioto0o ce week-end pour perdre au billard !"),

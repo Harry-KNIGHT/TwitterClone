@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct CreationTweetView: View {
+    
     let tweet: Tweet
+    
     @State var tweetTextEntry: String = ""
+    
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         VStack {
             HStack {
@@ -21,7 +26,20 @@ struct CreationTweetView: View {
                 TextField("Quoi de neuf ?", text: $tweetTextEntry)
             }.padding()
             Spacer()
-        }
+        }.navigationBarItems(leading: Button(action: { self.presentationMode.wrappedValue.dismiss() },
+                                               label: {
+               Text("Annuler")
+           }), trailing: Button(action: {}, label: {
+               Text("Tweeter")
+                   .bold()
+                   .padding(2)
+                   .padding(.horizontal, 10)
+                   .padding(.vertical, 5)
+                   .foregroundColor(.white)
+                   .background(Color.blue)
+                   .clipShape(RoundedRectangle(cornerRadius: 20.0))
+           }))
+            .navigationBarBackButtonHidden(true)
     }
 }
 
