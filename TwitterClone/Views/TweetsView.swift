@@ -13,31 +13,34 @@ struct TweetsView: View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
                 List(tweets) { tweet in
-                    HStack(alignment: .top) {
-                        Image(tweet.profilePicture)
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(Circle())
-                            .frame(width: 45)
-                        VStack(alignment: .leading) {
-                            HStack {
-                                Text(tweet.profileName)
-                                    .bold()
-                                Text(tweet.arobase)
-                                Spacer()
-                                Image(systemName: "ellipsis")
-                            }
-                            Text(tweet.tweetContent)
-                            HStack {
-                                ActionButtonView(buttonImageName: "message")
-                                ActionButtonView(buttonImageName: "return")
-                                ActionButtonView(buttonImageName: "heart")
-                                ActionButtonView(buttonImageName:  "square.and.arrow.up")
+                    NavigationLink(destination: TweetDetailView(tweet: tweet)) {
+                        HStack(alignment: .top) {
+                            Image(tweet.profilePicture)
+                                .resizable()
+                                .scaledToFit()
+                                .clipShape(Circle())
+                                .frame(width: 45)
+                            VStack(alignment: .leading) {
+                                HStack {
+                                    Text(tweet.profileName)
+                                        .bold()
+                                    Text(tweet.arobase)
+                                    Spacer()
+                                    Image(systemName: "ellipsis")
+                                }
+                                Text(tweet.tweetContent)
+                                HStack {
+                                    ActionButtonCellView(buttonImageName: "message")
+                                    ActionButtonCellView(buttonImageName: "return")
+                                    ActionButtonCellView(buttonImageName: "heart")
+                                    ActionButtonCellView(buttonImageName: "square.and.arrow.up")
+                                }.padding(.top, 0.1)
                             }
                         }
                     }
                 }.listStyle(.plain)
                     .navigationBarTitle("Twitter", displayMode: .inline)
+                    .labelsHidden()
                     .navigationBarItems(leading: Button(action: {},
                                                         label: {
                         Image("NoneProfilePicture")
@@ -47,11 +50,9 @@ struct TweetsView: View {
                             .frame(width: 40)
                     }), trailing: Button(action: {}, label: {
                         Image(systemName: "seal")
-                }))
+                    }))
                 NewTweetButtonCellView()
                     .padding()
-
-                    
             }
         }
     }
@@ -64,13 +65,4 @@ struct TweetsView_Previews: PreviewProvider {
     }
 }
 
-struct ActionButtonView: View {
-    
-    var buttonImageName: String
-    
-    var body: some View {
-        Button(action: {}, label: { Image(systemName: buttonImageName)})
-            .padding(.horizontal)
-            .padding(.horizontal, -10)
-    }
-}
+
