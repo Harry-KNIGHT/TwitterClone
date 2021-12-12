@@ -17,6 +17,7 @@
 		3C04413B2763F7B9005842BE /* PrivateMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04413A2763F7B9005842BE /* PrivateMessageView.swift */; };
 		3C04413E2763F7F2005842BE /* TweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04413D2763F7F2005842BE /* TweetModel.swift */; };
 		3C04414127654793005842BE /* Tweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04414027654793005842BE /* Tweets.swift */; };
+		3C0441442765EF3A005842BE /* NewTweetButtonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0441432765EF39005842BE /* NewTweetButtonCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3C04413A2763F7B9005842BE /* PrivateMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateMessageView.swift; sourceTree = "<group>"; };
 		3C04413D2763F7F2005842BE /* TweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetModel.swift; sourceTree = "<group>"; };
 		3C04414027654793005842BE /* Tweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweets.swift; sourceTree = "<group>"; };
+		3C0441432765EF39005842BE /* NewTweetButtonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetButtonCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				3C0441282763F6EA005842BE /* ContentView.swift */,
 				3C0441342763F792005842BE /* TweetsView.swift */,
+				3C0441432765EF39005842BE /* NewTweetButtonCellView.swift */,
 				3C0441362763F7A1005842BE /* SearchView.swift */,
 				3C0441382763F7AB005842BE /* NotificationView.swift */,
 				3C04413A2763F7B9005842BE /* PrivateMessageView.swift */,
@@ -184,6 +187,7 @@
 				3C04413E2763F7F2005842BE /* TweetModel.swift in Sources */,
 				3C04414127654793005842BE /* Tweets.swift in Sources */,
 				3C04413B2763F7B9005842BE /* PrivateMessageView.swift in Sources */,
+				3C0441442765EF3A005842BE /* NewTweetButtonCellView.swift in Sources */,
 				3C0441352763F792005842BE /* TweetsView.swift in Sources */,
 				3C0441272763F6EA005842BE /* TwitterCloneApp.swift in Sources */,
 				3C0441392763F7AB005842BE /* NotificationView.swift in Sources */,
