@@ -29,7 +29,8 @@ struct CreationTweetView: View {
         }.navigationBarItems(leading: Button(action: { self.presentationMode.wrappedValue.dismiss() },
                                                label: {
                Text("Annuler")
-           }), trailing: Button(action: {}, label: {
+        }), trailing: Button(action: { tweets.append(tweet)}
+                             , label: {
                Text("Tweeter")
                    .bold()
                    .padding(2)

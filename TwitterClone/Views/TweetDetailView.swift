@@ -34,7 +34,7 @@ struct TweetDetailView: View {
                 }
                 Text(tweet.tweetContent)
                 HStack {
-                    Text("22: 44 • 11/22/21 •")
+                    Text("\(tweet.date.formatted(date: .numeric, time: .shortened)) •")
                     Text("Twitter for iPhone")
                         .foregroundColor(.blue)
                 }.padding(.top, 1)

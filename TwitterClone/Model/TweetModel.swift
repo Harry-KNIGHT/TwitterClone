@@ -14,6 +14,10 @@ struct Tweet: Identifiable {
     let profileName: String
     let arobase: String
     let tweetContent: String
+    let date: Date
+    
+
+
 //    let image: String?
 //    let video: String?
 }
