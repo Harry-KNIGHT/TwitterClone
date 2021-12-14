@@ -24,19 +24,23 @@ struct TweetsView: View {
                                     Text(tweet.profileName)
                                         .bold()
                                     Text(tweet.arobase)
+                                        .foregroundColor(.secondary)
                                     Spacer()
-                                    Image(systemName: "ellipsis")
+                                    ActionButtonCellView(buttonImageName: "ellipsis")
+                                    //                                    Image(systemName: "ellipsis")
                                 }
                                 Text(tweet.tweetContent)
+                                .padding(.vertical, 0)
                                 HStack {
                                     ActionButtonCellView(buttonImageName: "message")
                                     ActionButtonCellView(buttonImageName: "return")
                                     ActionButtonCellView(buttonImageName: "heart")
                                     ActionButtonCellView(buttonImageName: "square.and.arrow.up")
-                                }.padding(.top, 0.1)
+                                }
                             }
                         }
                     }
+
                 }.listStyle(.plain)
                     .navigationBarTitle("Twitter", displayMode: .inline)
                     .labelsHidden()

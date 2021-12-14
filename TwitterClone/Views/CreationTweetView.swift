@@ -10,10 +10,10 @@ import SwiftUI
 struct CreationTweetView: View {
     
     let tweet: Tweet
-    
     @State var tweetTextEntry: String = ""
-    
     @Environment(\.presentationMode) var presentationMode
+    
+
 
     var body: some View {
         VStack {
@@ -29,7 +29,7 @@ struct CreationTweetView: View {
         }.navigationBarItems(leading: Button(action: { self.presentationMode.wrappedValue.dismiss() },
                                                label: {
                Text("Annuler")
-        }), trailing: Button(action: { tweets.append(tweet)}
+        }), trailing: Button(action: { tweets.append(Tweet(profilePicture: "NoneProfilePicture", profileName: "Jocko", arobase: "@JockoPodcast", tweetContent: "Today is a good day, bird's flying and my wife is happy", date: Date())) }
                              , label: {
                Text("Tweeter")
                    .bold()
@@ -46,6 +46,6 @@ struct CreationTweetView: View {
 
 struct CreationTweetView_Previews: PreviewProvider {
     static var previews: some View {
-        CreationTweetView(tweet: tweets[0])
+        CreationTweetView(tweet: tweets[5])
     }
 }

@@ -6,20 +6,33 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 struct Tweet: Identifiable {
     var id = UUID()
-    let profilePicture: String
-    let profileName: String
-    let arobase: String
-    let tweetContent: String
-    let date: Date
-    
-
-
+    var profilePicture: String
+    var profileName: String
+    var arobase: String
+    var tweetContent: String
+    var date: Date
 //    let image: String?
 //    let video: String?
+}
+
+enum ActionsInTweet: String, CaseIterable, Identifiable {
+  
+    
+    case follow = "Suivre @Ellioto0o"
+    case hide = "Cacher Ellioto0o"
+    case hideConv = "Masquer cette conversation"
+    case block = "Block @Ellioto0o"
+    case report = "Signaler le tweet"
+    case seeResponse = "Voir les réponses masquées"
+    
+    var id: String { self.rawValue }
+    
+    
 }
 /* If we connect Tweet to Profile later
 struct Profile: Identifiable {

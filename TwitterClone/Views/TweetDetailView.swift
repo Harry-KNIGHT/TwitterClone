@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct TweetDetailView: View {
-    
+
     let tweet: Tweet
+    @State private var selectedAction = ActionsInTweet.block
     
     var body: some View {
         VStack {
@@ -27,9 +28,16 @@ struct TweetDetailView: View {
                                 .font(.title2)
                             Text(tweet.arobase)
                                 .foregroundColor(.secondary)
+                           
+                                }
+                        Spacer()
+                        Picker("Actions", selection: $selectedAction) {
+                            ForEach(ActionsInTweet.allCases) { action in
+                                Text(action.rawValue)
+                            }
                         }
                         Spacer()
-                        Image(systemName: "ellipsis")
+                       
                     }
                 }
                 Text(tweet.tweetContent)
@@ -68,8 +76,7 @@ struct TweetDetailView: View {
                 
         }.padding()
     }
-    
-    
+
 }
 
 
