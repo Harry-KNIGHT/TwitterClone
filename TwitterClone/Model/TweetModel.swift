@@ -23,10 +23,10 @@ struct Tweet: Identifiable {
 enum ActionsInTweet: String, CaseIterable, Identifiable {
   
     
-    case follow = "Suivre @Ellioto0o"
-    case hide = "Cacher Ellioto0o"
+    case follow = "Suivre @JLennon"
+    case hide = "Cacher Lennon"
     case hideConv = "Masquer cette conversation"
-    case block = "Block @Ellioto0o"
+    case block = "Block @JLennon"
     case report = "Signaler le tweet"
     case seeResponse = "Voir les réponses masquées"
     

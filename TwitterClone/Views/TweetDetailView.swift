@@ -13,7 +13,7 @@ struct TweetDetailView: View {
     @State private var selectedAction = ActionsInTweet.block
     
     var body: some View {
-        VStack {
+        VStack() {
             VStack(alignment: .leading) {
                 HStack {
                     Image(tweet.profilePicture)
@@ -22,18 +22,19 @@ struct TweetDetailView: View {
                         .clipShape(Circle())
                         .frame(width: 70)
                     HStack {
-                        VStack(alignment: .leading) {
+                        VStack() {
                             Text(tweet.profileName)
                                 .bold()
-                                .font(.title2)
+                                .font(.title3)
                             Text(tweet.arobase)
                                 .foregroundColor(.secondary)
-                           
+                                .font(.subheadline)
                                 }
                         Spacer()
                         Picker("Actions", selection: $selectedAction) {
                             ForEach(ActionsInTweet.allCases) { action in
                                 Text(action.rawValue)
+                            
                             }
                         }
                         Spacer()
@@ -43,8 +44,10 @@ struct TweetDetailView: View {
                 Text(tweet.tweetContent)
                 HStack {
                     Text("\(tweet.date.formatted(date: .numeric, time: .shortened)) •")
+                        .font(.callout)
                     Text("Twitter for iPhone")
                         .foregroundColor(.blue)
+                        .font(.callout)
                 }.padding(.top, 1)
                 
                 Divider()
@@ -53,10 +56,12 @@ struct TweetDetailView: View {
                         .bold()
                     Text("Retweets")
                         .foregroundColor(.secondary)
+                        .font(.callout)
                     Text("23")
                         .bold()
                     Text("J'aime")
                         .foregroundColor(.secondary)
+                        .font(.callout)
                 }
                 Divider()
                 VStack(alignment: .center) {
@@ -82,7 +87,7 @@ struct TweetDetailView: View {
 
 struct TweetDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TweetDetailView(tweet: tweets[0])
+        TweetDetailView(tweet: tweets[6])
             .preferredColorScheme(.light)
     }
 }

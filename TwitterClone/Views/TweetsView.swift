@@ -27,15 +27,20 @@ struct TweetsView: View {
                                         .foregroundColor(.secondary)
                                     Spacer()
                                     ActionButtonCellView(buttonImageName: "ellipsis")
-                                    //                                    Image(systemName: "ellipsis")
                                 }
                                 Text(tweet.tweetContent)
-                                .padding(.vertical, 0)
+                                .padding(.bottom, 10)
+                                .lineLimit(10)
                                 HStack {
                                     ActionButtonCellView(buttonImageName: "message")
+                                        .padding(.horizontal, 1)
                                     ActionButtonCellView(buttonImageName: "return")
+                                        .padding(.horizontal)
                                     ActionButtonCellView(buttonImageName: "heart")
+                                        .padding(.horizontal)
                                     ActionButtonCellView(buttonImageName: "square.and.arrow.up")
+                                        .padding(.horizontal)
+                                     
                                 }
                             }
                         }
